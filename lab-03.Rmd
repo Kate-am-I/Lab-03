@@ -35,6 +35,10 @@ Are there missing values?
 ```{r}
 # explore the types of the columns in jan_feb_flights
 
+glimpse(jan_feb_flights) # to view column types
+is.na(jan_feb_flights)
+jan_feb_flights %>% filter(if_any(everything(), is.na)) # filter for <NA> rows
+colSums(is.na(jan_feb_flights)) # summarise number of <NA> in each column
 ```
 
 ```{r}
