@@ -72,6 +72,19 @@ _Your answer here_
 ---
 
 # 2. Delays & Weather
+```{python}
+```
+```{r}
+a <- left_join(jan_feb_flights,weather, by = c("origin", "year", "month", "day", "hour"))
+```
+
+
+```{python}
+```
+
+
+```{python}
+```
 
 **Goal:** Analyze relationship between average departure delay and wind gust speed.
 
